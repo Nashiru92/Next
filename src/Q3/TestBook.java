@@ -6,14 +6,14 @@ import Q2.Book;
 public class TestBook {
 	public static void main(String[] args) {
 	      // We need an Author instance to create a Book instance
-	      Author dan = new Author("Sydney Amoah", "sydnezamoah@gmail.com", 'm');
+	      Author dan = new Author("Adams Abdul Nashiru", "adamsnashiru1733@gmail.com", 'm');
 	      System.out.println(dan);  // Author's toString()
-	      //Sydney Amoah (m) at sydnezamoah@gmail.com
+	      //Adams Abdul Nashiru (m) at adamsnashiru1733@gmail.com
 
 	      // Test Book's constructor and toString()
 	      Book dummyBook = new Book("Java for beginnners", dan, 10, 150);
 	      System.out.println(dummyBook);  // Book's toString()
-	      //'Java for beginners' by Sydney Amoah (m) at sydnezamoah@gmail.com
+	      //'Java for beginners' by Adams Abdul Nashiru (m) at adamsnashiru1733@gmail.com
 
 	      // Test Setters and Getters
 	      dummyBook.getPrice(10);
@@ -25,17 +25,17 @@ public class TestBook {
 	      System.out.println("qty is: " + dummyBook.getQty());
 	      //Tty is: 150
 	      System.out.println("author is: " + dummyBook.getAuthor());  // invoke Author's toString()
-	      //author is: Sydney Amaoah (m) at sydnezamoah@gmail.com
+	      //author is: Sydney Amaoah (m) at adamsnashiru1733@gmail.com
 	      System.out.println("author's name is: " + dummyBook.getAuthor().getName());
-	      //author's name is: Sydney Amaoah
+	      //author's name is: Adams Abdul Nashiru
 	      System.out.println("author's email is: " + dummyBook.getAuthor().getEmail());
-	      //author's email is: sydnezamoah@gmail.com
+	      //author's email is: adamsnashiru1733@gmail.com
 	      System.out.println("author's gender is: " + dummyBook.getAuthor().getGender());
 	      //author's gender is: m
 
 	      // Using an anonymous Author instance to create a Book instance
 	      Book moreDummyBook = new Book("Java for more dummies",
-	            new Author("cash socuz", "socuzcash@gmail.com", 'm'), // an anonymous Author's instance
+	            new Author("Adams Abdul Nashiru", "adamsnashiru1733@gmail.com", 'm'), // an anonymous Author's instance
 	            61.6, 21);
 	      System.out.println(moreDummyBook);  // Book's toString()
 	      //'Java for more dummies' by Peter Lee (m) at peter@nowhere.com
